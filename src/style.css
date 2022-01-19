@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    background: #282b31;
+}
+
+.titleMain {
+    color: #51C4D3;
+    font-size: 80px;
+}
+
+.subTitle {
+    color: #51C4D3;
+    font-size: 40px;
+}
+
+.yourMessages {
+    border: 2px solid #51C4D3;
+    background: #D8E3E7;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.button {
+    padding: 10px;
+    border: 2px solid #126e82;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: transparent;
+    color: #126E82;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    background: #D8E3E7;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.button:hover::before {
+    width: 100%
+}
