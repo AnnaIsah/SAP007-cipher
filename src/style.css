@@ -1,33 +1,54 @@
 body {
     text-align: center;
-    background: #282b31;
+    background: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .titleMain {
-    color: #51C4D3;
+    color: #000000;
     font-size: 80px;
+    -webkit-text-stroke: 1px #D6D6D6;
+    text-stroke: 20px;
+}
+
+.resposta {
+    background: #000000;
+    color: #D6D6D6;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 3px;
+    border: 2px solid #f6b204;
+}
+
+.img {
+    width: 30%;
+    height: 50%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 1px #f6b204;
 }
 
 .subTitle {
-    color: #51C4D3;
+    color: #000000;
     font-size: 40px;
+    -webkit-text-stroke: 1px #D6D6D6;
+    text-stroke: 10px;
 }
 
 .yourMessages {
-    border: 2px solid #51C4D3;
-    background: #D8E3E7;
+    border: 2px solid #f6b204;
     border-radius: 3px;
+    background: #000000;
     font-size: 20px;
-    color: #000000;
+    color: #D6D6D6;
 }
 
 .button {
     padding: 10px;
-    border: 2px solid #126e82;
+    border: 2px solid #f6b204;
     border-radius: 8px;
     margin-top: 20px;
     background: transparent;
-    color: #126E82;
+    color: #f6b204;
     font-size: 20px;
     cursor: pointer;
     position: relative;
@@ -36,7 +57,7 @@ body {
 .button::before {
     content: '';
     position: absolute;
-    background: #D8E3E7;
+    background: #D6D6D6;
     width: 0;
     height: 100%;
     top: 0;
