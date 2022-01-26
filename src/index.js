@@ -1,11 +1,16 @@
 import cipher from './cipher.js';
 
-document.getElementById("btn-Criptografar").addEventListener("click", validar)
-document.getElementById("btn-Descriptografar").addEventListener("click", validar2)
+document.getElementById("btn-Criptografar").addEventListener("click", validarC)
+document.getElementById("btn-Descriptografar").addEventListener("click", validarD)
+
+function exibirResposta() {
+    document.getElementById("div-resposta").removeAttribute('hidden')
+}
+
 const cipherCode = cipher
 
-function validar() {
-
+function validarC() {
+    exibirResposta()
     let elemento = document.getElementById("ipt-mensagens").value.toUpperCase();
 
     let resposta = document.getElementById("resposta");
@@ -14,8 +19,8 @@ function validar() {
 
 }
 
-function validar2() {
-
+function validarD() {
+    exibirResposta()
     let elemento = document.getElementById("ipt-mensagens").value.toUpperCase();;
 
     let resposta = document.getElementById("resposta");

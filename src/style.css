@@ -1,23 +1,18 @@
 body {
-    text-align: center;
-    background: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000;
 }
 
-.titleMain {
+.titleHeader {
     color: #000000;
     font-size: 80px;
+    text-align: center;
     -webkit-text-stroke: 1px #D6D6D6;
     text-stroke: 20px;
 }
 
-.resposta {
-    background: #000000;
-    color: #D6D6D6;
-    margin-left: 35%;
-    margin-right: 35%;
-    border-radius: 3px;
-    border: 2px solid #f6b204;
+.main {
+    text-align: center;
 }
 
 .img {
@@ -34,12 +29,19 @@ body {
     text-stroke: 10px;
 }
 
-.yourMessages {
+.ipt-mensagens {
     border: 2px solid #f6b204;
     border-radius: 3px;
     background: #000000;
     font-size: 20px;
     color: #D6D6D6;
+}
+
+.resposta {
+    background: #000000;
+    color: #D6D6D6;
+    border-radius: 3px;
+    border: 2px solid #f6b204;
 }
 
 .button {

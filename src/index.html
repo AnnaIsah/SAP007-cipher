@@ -10,28 +10,36 @@
 
 <body>
 
-    <div>
-        <h1 class="titleMain">Armada Potter</h1>
-    </div>
+    <header>
+        <div>
+            <h1 class="titleHeader">Armada Potter</h1>
+        </div>
+    </header>
 
-    <div>
-        <img class="img" src="imgHP/Edwiges.jpg" alt="imagem coruja Edwiges">
-    </div>
+    <main class="main">
 
-    <p class="resposta" id="resposta"></p>
+        <div>
+            <img class="img" src="imgHP/Edwiges.jpg" alt="imagem coruja Edwiges">
+        </div>
 
-    <div>
-        <h2 class="subTitle">Digite sua mensagem:</h2>
-    </div>
+        <div>
+            <h2 class="subTitle">Digite sua mensagem:</h2>
+        </div>
 
-    <div>
-        <input class="yourMessages" type="text" name="mensagens" id="ipt-mensagens" placeholder="Digite sua mensagem">
-    </div>
+        <div>
+            <input class="ipt-mensagens" type="text" name="mensagens" id="ipt-mensagens" placeholder="Digite sua mensagem">
+        </div>
 
-    <div>
-        <button class="button" id="btn-Criptografar">Criptografar</button>
-        <button class="button" id="btn-Descriptografar">Descriptografar</button>
-    </div>
+        <div id="div-resposta" hidden>
+            <p class="resposta " id="resposta"></p>
+        </div>
+
+        <div>
+            <button class="button" id="btn-Criptografar">Criptografar</button>
+            <button class="button" id="btn-Descriptografar">Descriptografar</button>
+        </div>
+
+    </main>
 
     <script type="module" src="index.js"></script>
 
