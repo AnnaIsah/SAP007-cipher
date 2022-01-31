@@ -3,15 +3,15 @@ body {
     background: #000000;
 }
 
-.titleHeader {
+header {
     color: #000000;
-    font-size: 80px;
+    font-size: 40px;
     text-align: center;
     -webkit-text-stroke: 1px #D6D6D6;
     text-stroke: 20px;
 }
 
-.main {
+main {
     text-align: center;
 }
 
@@ -24,9 +24,9 @@ body {
 
 .subTitle {
     color: #000000;
-    font-size: 40px;
+    font-size: 30px;
     -webkit-text-stroke: 1px #D6D6D6;
-    text-stroke: 10px;
+    text-stroke: 5px;
 }
 
 .ipt-mensagens {
@@ -37,11 +37,17 @@ body {
     color: #D6D6D6;
 }
 
-.resposta {
-    background: #000000;
-    color: #D6D6D6;
-    border-radius: 3px;
+.ipt-numero {
     border: 2px solid #f6b204;
+    border-radius: 3px;
+    width: 5%;
+    background: #000000;
+    font-size: 20px;
+    color: #D6D6D6;
+}
+
+.resposta {
+    color: #D6D6D6;
 }
 
 .button {
@@ -70,4 +76,8 @@ body {
 
 .button:hover::before {
     width: 100%
+}
+
+footer {
+    text-align: end;
 }

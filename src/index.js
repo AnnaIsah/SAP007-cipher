@@ -1,31 +1,29 @@
 import cipher from './cipher.js';
 
-document.getElementById("btn-Criptografar").addEventListener("click", validarC)
-document.getElementById("btn-Descriptografar").addEventListener("click", validarD)
-
-function exibirResposta() {
-    document.getElementById("div-resposta").removeAttribute('hidden')
-}
+document.getElementById("btn-Criptografar").addEventListener("click", validarC);
+document.getElementById("btn-Descriptografar").addEventListener("click", validarD);
 
 const cipherCode = cipher
 
 function validarC() {
-    exibirResposta()
-    let elemento = document.getElementById("ipt-mensagens").value.toUpperCase();
 
+    let valorMensagem = document.getElementById("ipt-mensagens").value.toUpperCase();
+    let valorDeslocamento = document.getElementById("ipt-numero").value;
+    let converterOffset = Number(valorDeslocamento);
     let resposta = document.getElementById("resposta");
-    let valorEncode = cipherCode.encode(7, elemento)
-    resposta.innerHTML = valorEncode
+    let valorEncode = cipherCode.encode(converterOffset, valorMensagem);
+    resposta.innerHTML = valorEncode;
 
 }
 
 function validarD() {
-    exibirResposta()
-    let elemento = document.getElementById("ipt-mensagens").value.toUpperCase();;
 
+    let valorMensagem = document.getElementById("ipt-mensagens").value.toUpperCase();
+    let valorDeslocamento = document.getElementById("ipt-numero").value;
+    let converterOffset = Number(valorDeslocamento);
     let resposta = document.getElementById("resposta");
-    let valorEncode = cipherCode.decode(7, elemento)
-    resposta.innerHTML = valorEncode
+    let valorEncode = cipherCode.decode(converterOffset, valorMensagem);
+    resposta.innerHTML = valorEncode;
 
 
 }
